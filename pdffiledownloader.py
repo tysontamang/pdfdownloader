@@ -2,8 +2,9 @@ from tqdm import tqdm
 import requests
 import time
 
-chunk_size=1024
+
 try:
+	chunk_size=1024
 	url=input("enter the pdf url: ")
 
 	r=requests.get(url,stream=True)
