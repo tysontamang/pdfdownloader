@@ -3,7 +3,7 @@ import requests
 import time
 
 chunk_size=1024
-url="https://www.sampledocs.in/DownloadFiles/SampleFile?filename=sampledocs-100mb-pdf-file&ext=pdf"
+url=input("enter the pdf url: ")
 
 r=requests.get(url,stream=True)
 
